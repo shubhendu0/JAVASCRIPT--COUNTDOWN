@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('images/diwali2.jpg');
+    background-color: black;
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat ;
+    color: rgb(253, 253, 250);
+    width: 100vw;
+    margin: 0;
+}
+
+.countdown-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.countdown-body .header{
+    font-size: 20px;
+    letter-spacing: 4px;
+    width: 80%;
+    text-align: center;
+}
+
+.counter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 50px ;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    font-size: 39px;
+    color: hsl(345,21%, 60%);
+    background-color: black;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.header p, .days p,.hours p, .minutes p, .seconds p{
+    font-size: 28px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+/* ------------MEDIA QUERY--------------*/
+
+
+@media (max-width: 700px){
+
+    .countdown-body .header{
+        font-size: 22px;
+        letter-spacing: 4px;
+        margin:20px 0px 20px 0px;
+    }
+
+    .counter{
+        width: 80vw;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .box{
+        width: 80px;
+        height: 80px;
+        font-size: 17px;
+        margin: 6px;
+    }
+
+    .header p,.days p,.hours p, .minutes p, .seconds p{
+        font-size: 12px;
+        margin-top: 15px;
+        justify-content: center;
+    }
+    
+}
