@@ -15,10 +15,11 @@
 
 
 ## Project Status
-I will keep working on it until it's a fully functional website.
+- The countdown is working perfectly.
 
 
 ## Room for Improvement
+- In future i will add codes so that the user can set the target time from the frontend only.
 - I will continue updating this website and keep making it better.
 
 
