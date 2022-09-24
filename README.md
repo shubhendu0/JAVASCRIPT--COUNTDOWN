@@ -5,7 +5,8 @@
 > This is a countdown webapp.
 
 
-## Preview ![Screenshot (618)](https://user-images.githubusercontent.com/82198522/181196255-c0a698ca-d163-4162-b120-98fa8f936040.png)
+## Preview 
+![Screenshot (824)](https://user-images.githubusercontent.com/82198522/192116613-1c793999-4bca-48c7-946c-a625f1600269.png)
 
 
 ## Technologies Used
