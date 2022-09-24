@@ -5,32 +5,48 @@
     <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body>
-    <div class="countdown-body">
+    
+    <div id="ct" class="countdown-body">
         <div class="header">
-            <p>COUNTDOWN FOR DIWALI</p>
-            <p>24th OCTOBER</p>
+            <p>SET TARGET</p>
+        </div>
+        
+        <div class="setdate" >
+            <input class="box" id="getday" type="number" min="1" max="31" placeholder="dd">
+            <input class="box" id="getmonth" type="number" min="1" max="12" placeholder="mm">
+            <input class="box" id="getyear" type="number" min="2022" max="3000" placeholder="yy">            
+        </div>
+
+        <div class="buttons">
+            <button id="start" class="btn" > START </button>
+            <button id="reset" class="btn" > RESET </button>
+        </div>
+
+        <div class="header">
+            <p id="msg"> COUNTDOWN </p>
         </div>
 
         <div class="counter">
             <div class="days" >
-                <div class="box" id="days"> 10 </div>
+                <div class="box" id="days"> 0 </div>
                 <p>DAYS</p>
             </div>
             <div class="hours" >
-                <div class="box" id="hours"> 10 </div>
+                <div class="box" id="hours"> 0 </div>
                 <p>HOURS</p>
             </div>
             <div class="minutes" >
-                <div class="box" id="minutes"> 10 </div>
+                <div class="box" id="minutes"> 0 </div>
                 <p>MINUTES</p>
             </div>
             <div class="seconds" >
-                <div class="box" id="seconds"> 10 </div>
+                <div class="box" id="seconds"> 0 </div>
                 <p>SECONDS</p>
             </div>
         </div>
     </div>
 
     <script src="script.js"> </script>
+    
 </body>
 </html>
