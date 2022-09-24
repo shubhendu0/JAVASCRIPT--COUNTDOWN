@@ -3,14 +3,25 @@
     padding: 0;
 }
 body{
-    background-image: url('images/diwali2.jpg');
-    background-color: black;
+    background-image: url('https://wonderfulengineering.com/wp-content/uploads/2014/10/time-wallpaper.jpeg');
+    background-color: rgb(197, 68, 68);
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat ;
     color: rgb(253, 253, 250);
     width: 100vw;
     margin: 0;
+}
+
+.btn{
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(219, 52, 52) ;
+}
+.btn:hover:enabled{
+    background-color: orangered ;
 }
 
 .countdown-body{
@@ -31,29 +42,37 @@ body{
 .counter{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 60%;
-    margin-top: 50px ;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-top: 20px ;
 }
-
+.setdate{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    margin-top: 10px ;
+}
 .box{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90px;
-    height: 90px;
-    font-size: 39px;
+    width: 130px;
+    height: 120px;
+    font-size: 30px;
     color: hsl(345,21%, 60%);
     background-color: black;
-    border-radius: 5px;
-    margin: 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin: 10px;
 }
 
 .header p, .days p,.hours p, .minutes p, .seconds p{
     font-size: 28px;
     letter-spacing: 3px;
     text-align: center;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 
