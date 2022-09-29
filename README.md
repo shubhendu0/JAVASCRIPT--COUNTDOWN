@@ -1,4 +1,4 @@
-## COUNTDOWN TIMER FOR DIWALI
+## COUNTDOWN TIMER 
 
 
 ## General Information
