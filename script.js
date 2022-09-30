@@ -33,6 +33,21 @@ start.addEventListener('click' , function() {
         start.disabled = false
         return false;
     }
+    else if(getday>31){
+        alert('invalid date')
+        start.disabled = false
+        return false;
+    }
+    else if((getmonth==4 || getmonth==6 || getmonth==9 || getmonth==8 || getmonth==11 ) && getday>30){
+        alert('invalid date')
+        start.disabled = false
+        return false;
+    }
+    else if((getmonth==2 && getday>29) || (getmonth==2 && getday>28 && ((getyear%100==0 && getyear%400!=0) || (getyear%100!=0 && getyear%4!=0)))){
+        alert('invalid date')
+        start.disabled = false
+        return false;
+    }
     else{
         document.getElementById("getday").disabled=true
         document.getElementById("getmonth").disabled=true
