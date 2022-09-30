@@ -54,7 +54,7 @@ start.addEventListener('click' , function() {
         document.getElementById("getyear").disabled=true
     }
 
-    const target = new Date(getyear,getmonth,getday).getTime();
+    const target = new Date(getyear,getmonth-1,getday).getTime();
     //console.log(target)
     //console.log(new Date(target).toLocaleDateString())
 
@@ -65,7 +65,7 @@ start.addEventListener('click' , function() {
         let difference= target - today; 
         //console.log(difference)
         
-        let days= Math.floor(difference / (1000*60*60*24)) - 30;  // Remaining Days
+        let days= Math.floor(difference / (1000*60*60*24));  // Remaining Days
         let hours= Math.floor(difference / (1000*60*60) % 24); // Remaining hours 
         let minutes= Math.floor(difference / (1000*60) % 60);  // Remaining minutes
         let seconds= Math.floor(difference / (1000) % 60);  // Remaining seconds
