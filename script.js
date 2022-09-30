@@ -44,14 +44,14 @@ start.addEventListener('click' , function() {
     console.log(new Date(target).toLocaleDateString())
 
     let x = setInterval( () => {
-        const today= new Date().getTime(); // present time in milliseconds.
+        const today= new Date().getTime(); 
         //console.log(today)
         
-        let difference= target - today; // difference between present time and target time in milliseconds.
+        let difference= target - today; 
         //console.log(difference)
         
         let days= Math.floor(difference / (1000*60*60*24)) - 30;  // Remaining Days
-        let hours= Math.floor(difference / (1000*60*60) % 24); // Remaining hours - by dividing the remainder with (1000*60*60)
+        let hours= Math.floor(difference / (1000*60*60) % 24); // Remaining hours 
         let minutes= Math.floor(difference / (1000*60) % 60);  // Remaining minutes
         let seconds= Math.floor(difference / (1000) % 60);  // Remaining seconds
         
@@ -62,6 +62,7 @@ start.addEventListener('click' , function() {
         
     },1000);
 
+    
     const resetbtn = document.getElementById("reset")
     resetbtn.addEventListener('click' , function(){
         clearInterval(x);
