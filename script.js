@@ -55,8 +55,8 @@ start.addEventListener('click' , function() {
     }
 
     const target = new Date(getyear,getmonth,getday).getTime();
-    console.log(target)
-    console.log(new Date(target).toLocaleDateString())
+    //console.log(target)
+    //console.log(new Date(target).toLocaleDateString())
 
     let x = setInterval( () => {
         const today= new Date().getTime(); 
